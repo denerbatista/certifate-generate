@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Certificado</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&family=Allura&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Certificado</h1>
+
+    <div class="controls">
+      <label for="fileInput">Selecione o certificado de fundo:</label>
+      <input type="file" id="fileInput" accept="image/*"><br>
+
+      <label for="nameInput">Nome do certificado:</label>
+      <input type="text" id="nameInput" placeholder="Digite o nome"><br>
+
+      <label for="fontSizeInput">Tamanho da Fonte:</label>
+      <input type="range" id="fontSizeInput" min="10" max="100" value="30"><br>
+
+      <label for="fontFamilyInput">Tipo de Fonte:</label>
+<select id="fontFamilyInput">
+  <option value="Arial">Arial</option>
+  <option value="Times New Roman">Times New Roman</option>
+  <option value="Courier New">Courier New</option>
+  <option value="'Dancing Script', cursive">Dancing Script</option>
+  <option value="'Pacifico', cursive">Pacifico</option>
+  <option value="'Great Vibes', cursive">Great Vibes</option>
+  <option value="'Allura', cursive">Allura</option>
+  <option value="'Satisfy', cursive">Satisfy</option>
+</select>
+
+      <label for="xPosInput">Posição X:</label>
+      <input type="range" id="xPosInput" min="0" max="100" value="50"><br>
+
+      <label for="yPosInput">Posição Y:</label>
+      <input type="range" id="yPosInput" min="0" max="100" value="50"><br>
+
+      <button id="generatePdfBtn">Gerar PDF</button>
+    </div>
+
+    <div class="preview">
+      <canvas id="certificateCanvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Inclua o jsPDF aqui antes do script.js -->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
