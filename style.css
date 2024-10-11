@@ -1,6 +1,5 @@
-body @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-{
-  font-family: Arial, sans-serif,DancingScript;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
@@ -11,7 +10,7 @@ body @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@4
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -20,23 +19,52 @@ h1 {
 }
 
 .controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .controls label {
-  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.controls input, .controls select {
+.controls input, .controls select, .controls button {
+  width: 100%;
+  padding: 10px;
   margin-bottom: 10px;
-  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.controls div {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 200px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 .preview {
   text-align: center;
+  margin-top: 20px;
 }
 
 canvas {
   border: 1px solid #ccc;
   max-width: 100%;
+  margin-top: 20px;
 }
