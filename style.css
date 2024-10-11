@@ -1,0 +1,42 @@
+body @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+{
+  font-family: Arial, sans-serif,DancingScript;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls label {
+  margin-right: 10px;
+}
+
+.controls input, .controls select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.preview {
+  text-align: center;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
